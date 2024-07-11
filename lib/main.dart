@@ -1,3 +1,6 @@
+import 'package:e_commerce/screens/authentication_scrns/create_new_password.dart';
+import 'package:e_commerce/screens/authentication_scrns/login_scrn.dart';
+import 'package:e_commerce/screens/authentication_scrns/signup_scrn.dart';
 import 'package:e_commerce/screens/checkout/checkout_scrn.dart';
 import 'package:e_commerce/screens/getstart_scrns/getstart_four.dart';
 import 'package:e_commerce/screens/getstart_scrns/getstart_three.dart';
@@ -11,6 +14,7 @@ import 'package:e_commerce/screens/mycart/widget/mycart_item.dart';
 import 'package:e_commerce/screens/watchlist/watchlist_scrn.dart';
 import 'package:e_commerce/screens/watchlist/widget/watchlist_item.dart';
 import 'package:e_commerce/screens/widget/category_option.dart';
+import 'package:e_commerce/screens/widget/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,10 +43,14 @@ class MyApp extends StatelessWidget {
       //home: ItemsWidget(),
       //home: CategoryOptions(),
       //home: WatchListItem(),
-      home: WatchList(),
+      //home: WatchList(),
       //home: MyCart(),
       //home: MyCartItem(),
       //home: CheckOutScreen(),
+      //home: CustomTextField(),
+      //home: LoginScreen(),
+      //home: SignupScreen(),
+      home: NewPasswordScreen(),
     );
   }
 }

@@ -102,9 +102,11 @@ class WatchList extends StatelessWidget {
                         itemCount: 4,
                         scrollDirection: Axis.vertical,
                       ),
-                    )
+                    ),
+                   
                   ],
-                )
+                ),
+                 
               ],
             ),
           ),
