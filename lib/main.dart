@@ -1,6 +1,7 @@
 import 'package:e_commerce/screens/authentication_scrns/create_new_password.dart';
 import 'package:e_commerce/screens/authentication_scrns/login_scrn.dart';
 import 'package:e_commerce/screens/authentication_scrns/signup_scrn.dart';
+import 'package:e_commerce/screens/bottom_navbar_scrn/main_screen.dart';
 import 'package:e_commerce/screens/checkout/checkout_scrn.dart';
 import 'package:e_commerce/screens/getstart_scrns/getstart_four.dart';
 import 'package:e_commerce/screens/getstart_scrns/getstart_three.dart';
@@ -50,7 +51,8 @@ class MyApp extends StatelessWidget {
       //home: CustomTextField(),
       //home: LoginScreen(),
       //home: SignupScreen(),
-      home: NewPasswordScreen(),
+      //home: NewPasswordScreen(),
+      home: ScreenMain(),
     );
   }
 }
