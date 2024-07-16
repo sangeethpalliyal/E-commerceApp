@@ -64,6 +64,7 @@ class WatchList extends StatelessWidget {
                   itemCount: 4,
                   scrollDirection: Axis.horizontal,
                 ),
+                
               ),
                 Column(
                   children: [
@@ -106,7 +107,6 @@ class WatchList extends StatelessWidget {
                    
                   ],
                 ),
-                 
               ],
             ),
           ),

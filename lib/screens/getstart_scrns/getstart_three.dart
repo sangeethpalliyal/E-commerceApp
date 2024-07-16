@@ -1,3 +1,5 @@
+import 'package:e_commerce/core/configs/assets/app_images.dart';
+import 'package:e_commerce/screens/getstart_scrns/getstart_four.dart';
 import 'package:e_commerce/screens/widget/custom_elevated_button.dart';
 import 'package:e_commerce/screens/widget/custom_text.dart';
 import 'package:flutter/material.dart';
@@ -27,15 +29,14 @@ class GetStartScreenThree extends StatelessWidget {
                             height: 410,
                             width: 150,
                             //color: Colors.amber,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               //color: Colors.amber,
                               borderRadius: BorderRadius.vertical(
                                 top: Radius.circular(100),
                                 bottom: Radius.circular(100),
                               ),
                               image: DecorationImage(
-                                image: NetworkImage(
-                                    "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                                image: AssetImage(AppImages.introSevenBg),
                                 fit: BoxFit.cover,
                                 // colorFilter: ColorFilter.mode(
                                 //     Colors.grey, BlendMode.saturation),
@@ -61,15 +62,14 @@ class GetStartScreenThree extends StatelessWidget {
                                   height: 250,
                                   width: 150,
                                   //color: Colors.amber,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     //color: Colors.amber,
                                     borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(100),
                                       bottom: Radius.circular(100),
                                     ),
                                     image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                                      image:  AssetImage(AppImages.introEightBg),
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -91,15 +91,14 @@ class GetStartScreenThree extends StatelessWidget {
                               height: 150,
                               width: 150,
                               //color: Colors.amber,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 //color: Colors.amber,
                                 borderRadius: BorderRadius.vertical(
                                   top: Radius.circular(100),
                                   bottom: Radius.circular(100),
                                 ),
                                 image: DecorationImage(
-                                  image: NetworkImage(
-                                      "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                                  image:  AssetImage(AppImages.introNineBg),
                                   fit: BoxFit.cover,
                                    colorFilter: ColorFilter.mode(
                                      Colors.grey, BlendMode.saturation),
@@ -117,7 +116,7 @@ class GetStartScreenThree extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 CustomText(
@@ -131,7 +130,7 @@ class GetStartScreenThree extends StatelessWidget {
                   text: "Treat Your Self",
                   fontSize: 15,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 CustomText(
@@ -140,7 +139,7 @@ class GetStartScreenThree extends StatelessWidget {
                   fontSize: 14,
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Row(
@@ -151,13 +150,13 @@ class GetStartScreenThree extends StatelessWidget {
                       width: 10,
                       color: Colors.white,
                     ),
-                    SizedBox(width: 5,),
+                    const SizedBox(width: 5,),
                 Container(
                   height: 10,
                   width: 10,
                   color: Colors.cyan,
                 ),
-                SizedBox(width: 5,),
+                const SizedBox(width: 5,),
                 Container(
                   height: 10,
                   width: 10,
@@ -165,11 +164,18 @@ class GetStartScreenThree extends StatelessWidget {
                 ),
                   ],
                 ),
-                 SizedBox(
+                 const SizedBox(
                   height: 15,
                 ),
                 CustomElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => const GetStartScreenFour(),
+                  ),
+                );
+                  },
                   label: "Next",
                   labelColor: Colors.white,
                   backgroundColor: Colors.cyan,
@@ -178,15 +184,22 @@ class GetStartScreenThree extends StatelessWidget {
                   borderRadius: 100,
                   labelSize: 17,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 CustomElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => const GetStartScreenFour(),
+                  ),
+                );
+                  },
                   label: "Skip",
                   labelColor: Colors.white,
-                  backgroundColor: Color(0XFF222222),
-                  borderColor: Color(0XFF222222),
+                  backgroundColor: const Color(0XFF222222),
+                  borderColor: const Color(0XFF222222),
                   width: 300,
                   borderRadius: 100,
                   labelSize: 17,

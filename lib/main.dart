@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           background: const Color(0X000000),
         )
       ),
-      //home:GetStartScreenOne(), 
+      home:GetStartScreenOne(), 
       //home: GetStartScreenTwo(),
       //home: GetStartScreenThree(),
       //home: GetStartScreenFour(),
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
       //home: LoginScreen(),
       //home: SignupScreen(),
       //home: NewPasswordScreen(),
-      home: ScreenMain(),
+      //home: ScreenMain(),
     );
   }
 }

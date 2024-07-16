@@ -1,3 +1,5 @@
+import 'package:e_commerce/core/configs/assets/app_images.dart';
+import 'package:e_commerce/screens/getstart_scrns/getstart_two.dart';
 import 'package:e_commerce/screens/widget/custom_elevated_button.dart';
 import 'package:e_commerce/screens/widget/custom_text.dart';
 import 'package:flutter/material.dart';
@@ -26,15 +28,14 @@ class GetStartScreenOne extends StatelessWidget {
                         height: 410,
                         width: 150,
                         //color: Colors.amber,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           //color: Colors.amber,
                           borderRadius: BorderRadius.vertical(
                             top: Radius.circular(100),
                             bottom: Radius.circular(100),
                           ),
                           image: DecorationImage(
-                            image: NetworkImage(
-                                "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                            image: AssetImage(AppImages.introOneBg),
                             fit: BoxFit.cover,
                             colorFilter: ColorFilter.mode(
                                 Colors.grey, BlendMode.saturation),
@@ -44,6 +45,7 @@ class GetStartScreenOne extends StatelessWidget {
                           text: "*",
                           fontweight: FontWeight.bold,
                           fontSize: 55,
+                          
                         ),
                       ),
                     ],
@@ -60,15 +62,14 @@ class GetStartScreenOne extends StatelessWidget {
                               height: 250,
                               width: 150,
                               //color: Colors.amber,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 //color: Colors.amber,
                                 borderRadius: BorderRadius.vertical(
                                   top: Radius.circular(100),
                                   bottom: Radius.circular(100),
                                 ),
                                 image: DecorationImage(
-                                  image: NetworkImage(
-                                      "https://images.unsplash.com/photo-1622625841997-dfbffc98f4c9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                                  image: AssetImage(AppImages.introTwoBg),
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -90,15 +91,14 @@ class GetStartScreenOne extends StatelessWidget {
                           height: 150,
                           width: 150,
                           //color: Colors.amber,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             //color: Colors.amber,
                             borderRadius: BorderRadius.vertical(
                               top: Radius.circular(100),
                               bottom: Radius.circular(100),
                             ),
                             image: DecorationImage(
-                              image: NetworkImage(
-                                  "https://images.unsplash.com/photo-1627637454030-5ddd536e06e5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                              image: AssetImage(AppImages.introThreeBg),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -114,7 +114,7 @@ class GetStartScreenOne extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             CustomText(
@@ -128,7 +128,7 @@ class GetStartScreenOne extends StatelessWidget {
               text: "Treat Your Self",
               fontSize: 15,
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             CustomText(
@@ -137,11 +137,18 @@ class GetStartScreenOne extends StatelessWidget {
               fontSize: 14,
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             CustomElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => const GetStartScreenTwo(),
+                  ),
+                );
+              },
               label: "Let's Get Start",
               labelColor: Colors.white,
               backgroundColor: Colors.cyan,
@@ -150,10 +157,12 @@ class GetStartScreenOne extends StatelessWidget {
               borderRadius: 100,
               labelSize: 17,
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            CustomText(text: "Already have an account? Sign In",)
+            CustomText(
+              text: "Already have an account? Sign In",
+            )
           ],
         ),
       ),
