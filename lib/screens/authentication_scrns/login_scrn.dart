@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:e_commerce/screens/widget/custom_elevated_button.dart';
 import 'package:e_commerce/screens/widget/custom_text.dart';
 import 'package:e_commerce/screens/widget/custom_text_field.dart';
@@ -18,7 +16,7 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Center(
@@ -27,7 +25,7 @@ class LoginScreen extends StatelessWidget {
                     fontSize: 22,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -42,7 +40,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -53,42 +51,42 @@ class LoginScreen extends StatelessWidget {
                         height: 45,
                         width: 90,
                         decoration: BoxDecoration(
-                            color: Color(0XFF171717),
+                            color: const Color(0XFF171717),
                             border: Border.all(color: Colors.white, width: 0.2),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Icon(Icons.facebook),
+                        child: const Icon(Icons.facebook),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 45,
                         width: 90,
                         decoration: BoxDecoration(
-                            color: Color(0XFF171717),
+                            color: const Color(0XFF171717),
                             border: Border.all(color: Colors.white, width: 0.2),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Icon(Icons.facebook),
+                        child: const Icon(Icons.facebook),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 45,
                         width: 90,
                         decoration: BoxDecoration(
-                            color: Color(0XFF171717),
+                            color: const Color(0XFF171717),
                             border: Border.all(color: Colors.white, width: 0.2),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Icon(Icons.facebook),
+                        child: const Icon(Icons.facebook),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                CustomTextField(
+                const CustomTextField(
                     labelText: "Email", textHint: "Enter your email ID"),
                 //SizedBox(height: 5,),
-                CustomTextField(
-                    labelText: "Password", textHint: "Enter your password"),
+                const CustomTextField(
+                    labelText: "Password", textHint: "Enter your password",iconName: Icons.remove_red_eye_rounded,),
                 Padding(
                   padding: const EdgeInsets.only(right: 8),
                   child: CustomText(
@@ -97,7 +95,7 @@ class LoginScreen extends StatelessWidget {
                     fontSize: 13,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -119,7 +117,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 CustomElevatedButton(
                   onPressed: () {},
                   label: "Login",

@@ -1,4 +1,3 @@
-import 'package:e_commerce/screens/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -6,11 +5,13 @@ class CustomTextField extends StatelessWidget {
     super.key,
     required this.labelText,
     required this.textHint,
-    //this.iconName = null,
+    this.iconName,
+    this.controller,
   });
   final String labelText;
   final String textHint;
-  //final IconData iconName;
+  final IconData ? iconName;
+  final TextEditingController ? controller;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,8 +22,8 @@ class CustomTextField extends StatelessWidget {
               TextFormField(
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
-                  label: new  Text(labelText),
-                  labelStyle: TextStyle(color: Colors.white),
+                  label:   Text(labelText),
+                  labelStyle: const TextStyle(color: Colors.white),
                   hintText: textHint,
                   enabledBorder: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.grey),
@@ -42,7 +43,7 @@ class CustomTextField extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  suffixIcon: Icon(Icons.remove_red_eye_sharp),
+                  suffixIcon: const Icon(Icons.remove_red_eye_sharp),
                 ),
               ),
             ],

@@ -16,7 +16,7 @@ class SignupScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Center(
@@ -25,7 +25,7 @@ class SignupScreen extends StatelessWidget {
                     fontSize: 22,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -40,7 +40,7 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -51,50 +51,50 @@ class SignupScreen extends StatelessWidget {
                         height: 45,
                         width: 90,
                         decoration: BoxDecoration(
-                            color: Color(0XFF171717),
+                            color: const Color(0XFF171717),
                             border: Border.all(color: Colors.white, width: 0.2),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Icon(Icons.facebook),
+                        child: const Icon(Icons.facebook),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 45,
                         width: 90,
                         decoration: BoxDecoration(
-                            color: Color(0XFF171717),
+                            color: const Color(0XFF171717),
                             border: Border.all(color: Colors.white, width: 0.2),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Icon(Icons.facebook),
+                        child: const Icon(Icons.facebook),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 45,
                         width: 90,
                         decoration: BoxDecoration(
-                            color: Color(0XFF171717),
+                            color: const Color(0XFF171717),
                             border: Border.all(color: Colors.white, width: 0.2),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Icon(Icons.facebook),
+                        child: const Icon(Icons.facebook),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                CustomTextField(
+                const CustomTextField(
                     labelText: "First name", textHint: "Enter your first name"),
                 //SizedBox(height: 5,),
-                CustomTextField(
+                const CustomTextField(
                     labelText: "Last name", textHint: "Enter your last name"),
-                CustomTextField(
+                const CustomTextField(
                     labelText: "Email ID", textHint: "Enter your Email ID"),
-                    CustomTextField(
-                    labelText: "Password", textHint: "Enter your password"),
-                    CustomTextField(
-                    labelText: "Confirm password", textHint: "Re-enter your password"),
+                    const CustomTextField(
+                    labelText: "Password", textHint: "Enter your password",iconName: Icons.remove_red_eye_rounded,),
+                    const CustomTextField(
+                    labelText: "Confirm password", textHint: "Re-enter your password",iconName: Icons.remove_red_eye_rounded,),
                 
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -116,7 +116,7 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 CustomElevatedButton(
